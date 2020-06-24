@@ -8,7 +8,7 @@ import SEO from "./seo"
 import PostTitle from "./post-title"
 import PostDate from "./post-date"
 import PostFooter from "./post-footer"
-import PageTitle from "components/pageTitle"
+import BackLink from "./backLink"
 
 const Post = ({
   data: {
@@ -33,9 +33,9 @@ const Post = ({
       imageAlt={post.imageAlt}
     />
     <main>
-      <PageTitle 
+      <BackLink
+        to={"/blog"} 
         title={"Notes"}
-        description={"Synthetic thoughts from reading and experience about product, strategy, and technology."}
         Icon={()=><Layers size={48}/>}
       />
       <article>

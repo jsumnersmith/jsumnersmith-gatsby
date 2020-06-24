@@ -1,9 +1,10 @@
 /** @jsx jsx */
 import { Styled, jsx } from "theme-ui"
 import { Link } from "gatsby"
+import PostDate from "./post-date";
 
 const PostLink = ({ title, slug, date, excerpt }) => (
-  <article>
+  <article sx={{mb: 4}}>
     <header>
       <Styled.h2
         sx={{
@@ -13,14 +14,23 @@ const PostLink = ({ title, slug, date, excerpt }) => (
         <Styled.a
           as={Link}
           sx={{
-            textDecoration: `none`,
+            display: `block`,
+            mb: 3,
+            textDecoration: `underline`,
+            textDecorationColor: theme => `${theme.colors.primary}`,
+            textDecorationStyle: `wavy`,
+            textUnderlinePosition: `under`,
+            color: `text`,
+            '&:hover': {
+              color: `primary`
+            }
           }}
           to={slug}
         >
           {title || slug}
         </Styled.a>
       </Styled.h2>
-      <small>{date}</small>
+      <PostDate>{date}</PostDate>
     </header>
     <section>
       <Styled.p>{excerpt}</Styled.p>

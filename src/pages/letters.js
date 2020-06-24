@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, Text } from "theme-ui"
 import { BookOpen } from 'react-feather';
 
 import Layout from "../components/layout"
@@ -14,5 +14,6 @@ export default () => (
       description={"Marginalia and exposition on literary and human themes."}
       Icon={()=><BookOpen size={48}/>}
     />
+    <Text>Content coming soon.</Text>
   </Layout>
 )

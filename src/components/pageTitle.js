@@ -4,7 +4,7 @@ import { jsx, Box, Flex, Heading, Text } from 'theme-ui'
 export default ({title, description, Icon}) => {
 
   return (
-    <Flex>
+    <Flex sx={{border: `1px solid transparent`}}>
       <Flex sx={{minWidth: 120, justifyContent: `center`, alignItems: `center`}}>
         <Icon fontSize={24}/>
       </Flex>

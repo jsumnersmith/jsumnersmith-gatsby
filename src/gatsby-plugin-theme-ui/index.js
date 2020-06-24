@@ -1,6 +1,7 @@
 const blue = `mediumblue`
 const gray = `#222`
 const grayLight = `#ccc`
+const grayMedium = `#888`
 const white = `#fff`
 const yellow = `#FABC60`
 
@@ -11,6 +12,7 @@ export default {
     primary: blue,
     secondary: yellow,
     muted: grayLight,
+    soft: grayMedium,
     highlight: yellow,
     heading: gray,
     modes: {
@@ -19,7 +21,8 @@ export default {
         background: gray,
         primary: yellow,
         secondary: blue,
-        muted: grayLight,
+        muted: grayMedium,
+        soft: grayLight,
         highlight: blue,
         heading: white,
       },
@@ -59,19 +62,40 @@ export default {
     },
     h1: {
       variant: 'text.heading',
-      fontSize: 5,
+      fontSize: 4,
       mb: 4
     },
     h2: {
       variant: 'text.heading',
-      fontSize: 4,
+      fontSize: 3,
+      mb:3
     },
     h3: {
       variant: 'text.heading',
-      fontSize: 3,
+      fontSize: 1,
     },
     p: {
       mb: 3
+    },
+    ol: {
+      listStyle: `decimal`,
+      ml: 3
+    },
+    li: {
+      mb: 2
+    },
+    a: {
+      textDecoration: `underline`,
+      textDecorationColor: theme => `${theme.colors.primary}`,
+      textDecorationStyle: `wavy`,
+      textUnderlinePosition: `under`,
+      color: `text`,
+      '&:hover': {
+        color: `primary`
+      }
+    },
+    em: {
+      fontStyle: `italic`
     }
   }
 }
