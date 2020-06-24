@@ -1,33 +1,24 @@
-import { Link } from "gatsby"
+/** @jsx jsx */
+import { jsx, Text, Heading } from 'theme-ui'
+
+import Logo from './logo'
+import Link from "./link"
 import PropTypes from "prop-types"
-import React from "react"
+
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+  <header sx={{mb: 4}}>
+    
+    <Logo sx={{width: 200, marginLeft: 'auto', marginRight: 'auto'}}/>
+    <Heading as="h1" sx={{fontSize: 2, mb: 4, textAlign: 'center'}}>
+      <Link
+        to="/"
+      >
+        {siteTitle}
+      </Link>
+    </Heading>
+    <Text sx={{mb: 2}}>Product Manager <Link to="https://gatsbyjs.com">@Gatsby</Link> focused on developer experience.</Text>
+    <Text>Analogical thinker in an analytical world.</Text>
   </header>
 )
 
