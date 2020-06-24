@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <LargeLink 
-      to={'/blog'}
+      to={'/notes'}
       title={"Notes"}
       description={"Synthetic thoughts from reading and experience about product, strategy, and technology."}
       Icon={()=><Layers size={48}/>}

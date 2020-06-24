@@ -34,7 +34,7 @@ const Post = ({
     />
     <main>
       <BackLink
-        to={"/blog"} 
+        to={"/notes"} 
         title={"Notes"}
         Icon={()=><Layers size={48}/>}
       />
