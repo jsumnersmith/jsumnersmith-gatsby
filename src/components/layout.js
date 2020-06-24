@@ -26,11 +26,12 @@ const Layout = ({ children }) => {
     <Styled.root>
       <div css={css`
         display: grid;
+        display: grid;
         grid-template-columns: 300px 1fr;
         grid-column-gap: 0;
         grid-row-template: 1fr 1fr 1fr;
         max-width: 960px;
-        margin:0 auto;
+        margin: 0 auto;
         padding: 30px 0;
         @media screen and (max-width: 700px) {
           display: flex;
