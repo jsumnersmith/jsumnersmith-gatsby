@@ -5,7 +5,7 @@ export default ({title, description, Image}) => {
 
   return (
     <Flex sx={{border: `1px solid transparent`}}>
-      <Flex sx={{minWidth: 150, p: 4, justifyContent: `center`, alignItems: `center`}}>
+      <Flex sx={{minWidth: 170, padding: 37, justifyContent: `center`, alignItems: `center`}}>
         <Image />
       </Flex>
       <Box sx={{p: 4, pl: 0}}>
