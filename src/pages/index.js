@@ -3,7 +3,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LargeLink from "../components/largelink"
-import { BookOpen, Layers} from 'react-feather'
+import Book from "components/book-image"
+import Notes from "components/notes-image"
 
 const IndexPage = () => (
   <Layout>
@@ -12,13 +13,13 @@ const IndexPage = () => (
       to={'/notes'}
       title={"Notes"}
       description={"Synthetic thoughts from reading and experience about product, strategy, and technology."}
-      Icon={()=><Layers size={48}/>}
+      Image={()=><Notes width={100}/>}
     />
     <LargeLink 
       to={'/letters'}
       title={"Letters"}
       description={"Marginalia and exposition on literary and human themes."}
-      Icon={()=><BookOpen size={48}/>}
+      Image={()=><Book width={100}/>}
     />
   </Layout>
 )

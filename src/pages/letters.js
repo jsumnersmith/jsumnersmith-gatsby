@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { jsx, Text } from "theme-ui"
-import { BookOpen } from 'react-feather';
 
 import Layout from "../components/layout"
 import PageTitle from "../components/pageTitle"
 import SEO from "../components/seo"
+import Book from "components/book-image"
 
 export default () => (
   <Layout>
@@ -12,7 +12,7 @@ export default () => (
     <PageTitle 
       title={"Letters"}
       description={"Marginalia and exposition on literary and human themes."}
-      Icon={()=><BookOpen size={48}/>}
+      Image={()=><Book />}
     />
     <Text>Content coming soon.</Text>
   </Layout>

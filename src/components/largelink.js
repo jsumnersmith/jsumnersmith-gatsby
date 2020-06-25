@@ -2,13 +2,13 @@
 import { jsx, Box, Flex, Heading, Text } from 'theme-ui'
 import {Link} from 'gatsby'
 
-export default ({to, title, description, Icon}) => {
+export default ({to, title, description, Image}) => {
 
   return (
     <Link to={to} sx={{display: `block`, mb: 3, color: `text`, textDecoration: `none`, border: theme => `1px solid  ${theme.colors.muted}`, borderRadius: 3}}>  
       <Flex>
-        <Flex sx={{minWidth: 120, justifyContent: `center`, alignItems: `center`}}>
-          <Icon fontSize={24}/>
+        <Flex sx={{minWidth: 150, p: 4, justifyContent: `center`, alignItems: `center`}}>
+          <Image />
         </Flex>
         <Box sx={{p: 4, pl: 0}}>
           <Heading as="h2" sx={{

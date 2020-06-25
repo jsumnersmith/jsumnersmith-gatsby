@@ -1,10 +1,10 @@
 import React from "react"
-import { Layers } from "react-feather"
 
 import Layout from "./layout"
 import SEO from "./seo"
 import PostList from "./post-list"
 import PageTitle from "components/pageTitle"
+import Notes from "components/notes-image"
 
 
 const Posts = ({ location, posts, siteTitle, socialLinks }) => (
@@ -15,7 +15,7 @@ const Posts = ({ location, posts, siteTitle, socialLinks }) => (
       <PageTitle 
         title={"Notes"}
         description={"Synthetic thoughts from reading and experience about product, strategy, and technology."}
-        Icon={()=><Layers size={48}/>}
+        Image={()=><Notes />}
       />
       <PostList posts={posts} />
     </main>
