@@ -16,6 +16,7 @@ const PostLink = ({ title, slug, date, excerpt }) => (
           sx={{
             display: `block`,
             mb: 3,
+            lineHeight: 1.4,
             textDecoration: `underline`,
             textDecorationColor: theme => `${theme.colors.primary}`,
             textDecorationStyle: `wavy`,
@@ -26,14 +27,13 @@ const PostLink = ({ title, slug, date, excerpt }) => (
             }
           }}
           to={slug}
-        >
-          {title || slug}
-        </Styled.a>
+          dangerouslySetInnerHTML={{__html: title || slug}}
+        />
       </Styled.h2>
       <PostDate>{date}</PostDate>
     </header>
     <section>
-      <Styled.p>{excerpt}</Styled.p>
+      <Styled.p dangerouslySetInnerHTML={{__html: excerpt}} />
     </section>
   </article>
 )

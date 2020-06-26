@@ -12,6 +12,30 @@ module.exports = {
         basePath: `/notes`,
       },
     },
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `https://medium.com/feed/@jsumnersmith`,
+        name: `MediumPosts`,
+      }
+    },
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        baseUrl: `jsumner.wordpress.com/`,
+        protocol: `https`,
+        hostingWPCOM: true,
+        useACF: false,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `letters`,
+        path: `${__dirname}/src/letters`,
+      },
+    },
+    `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -25,7 +49,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `jsumnersmith`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#fff`,
