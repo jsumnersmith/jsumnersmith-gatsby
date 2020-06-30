@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { useStaticQuery, graphql } from "gatsby"
-import { jsx, useColorMode, Box} from 'theme-ui'
+import { jsx, useColorMode, Box} from "theme-ui"
 import Img from "gatsby-image"
 
 const Image = ({width = 100}) => {

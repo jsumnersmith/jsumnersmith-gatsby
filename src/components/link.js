@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
+import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 
-import styles from '../gatsby-plugin-theme-ui/styles';
+import styles from "../gatsby-plugin-theme-ui/styles"
 
 export default ({children, to, ...props}) => {
   const internal = /^\/(?!\/)/.test(to)

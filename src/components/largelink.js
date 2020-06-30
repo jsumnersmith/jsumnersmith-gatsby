@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, Heading, Text } from 'theme-ui'
-import {Link} from 'gatsby'
-import styles from '../gatsby-plugin-theme-ui/styles'
+import { jsx, Box, Flex, Heading, Text } from "theme-ui"
+import {Link} from "gatsby"
+import styles from "../gatsby-plugin-theme-ui/styles"
 
 export default ({to, title, description, Image}) => {
 

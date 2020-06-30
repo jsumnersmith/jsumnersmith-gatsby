@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { useStaticQuery, graphql } from "gatsby"
-import { jsx, useColorMode, Box} from 'theme-ui'
+import { jsx, useColorMode, Box} from "theme-ui"
 import Img from "gatsby-image"
 
 const Image = () => {
@@ -25,9 +25,9 @@ const Image = () => {
 
   const [colorMode] = useColorMode();
 
-  const image = colorMode === 'default' ? data.lightLogo : data.darkLogo;
+  const image = colorMode === "default" ? data.lightLogo : data.darkLogo;
 
-  return <Box sx={{width: 100, margin: "0 auto ", mb: 3}}><Img fluid={image.childImageSharp.fluid} /></Box>
+  return <Box sx={{width: 100, margin: `0 auto`, mb: 3}}><Img fluid={image.childImageSharp.fluid} /></Box>
 }
 
 export default Image

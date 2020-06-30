@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import { jsx, useColorMode, Box, Button, Flex } from 'theme-ui'
-import { ToggleLeft, ToggleRight, Sun, Moon } from 'react-feather'
+import { jsx, useColorMode, Box, Button, Flex } from "theme-ui"
+import { ToggleLeft, ToggleRight, Sun, Moon } from "react-feather"
 
 export default () => {
   const [colorMode, setColorMode] = useColorMode();
@@ -12,11 +12,11 @@ export default () => {
             aria-label="Dark Mode Toggle"
             variant="toggle"
             onClick={e => {
-              setColorMode(colorMode === 'default' ? 'dark' : 'default')
+              setColorMode(colorMode === "default" ? `dark` : `default`)
             }}
             sx={{display: `flex`, background: `none`, color: colorMode === 'default' ? `text` : `white`}}  
           >
-            {colorMode === 'default' ? <ToggleLeft /> : <ToggleRight />}
+            {colorMode === "default" ? <ToggleLeft /> : <ToggleRight />}
           </Button>
           <Moon />
           

@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
           display: flex;
           flex-direction: column;
         }
-      `} className={colorMode === 'default' ? 'light-mode' : 'dark-mode'}>
+      `} className={colorMode === "default" ? `light-mode` : `dark-mode`}>
         <Cell height={2} middle>
           <Header siteTitle={title}/>
         </Cell>

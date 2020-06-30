@@ -1,5 +1,6 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, Heading, Text } from 'theme-ui'
+import { jsx, Box, Flex, Heading, Text } from "theme-ui"
+import styles from "../gatsby-plugin-theme-ui/styles"
 
 export default ({title, description, Image}) => {
 
@@ -12,11 +13,7 @@ export default ({title, description, Image}) => {
         <Heading as="h2" sx={{
           fontSize: 3,
           mb: 3,
-          textDecoration: `underline`,
-          textDecorationColor: theme => `${theme.colors.primary}`,
-          textDecorationStyle: `wavy`,
-          textUnderlinePosition: `under`,
-          color: `text`,
+          ...styles.title
         }}>{title}</Heading>
         <Text>{description}</Text>
       </Box>
