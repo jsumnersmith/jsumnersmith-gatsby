@@ -6,6 +6,7 @@ import PropTypes from "prop-types"
 import BackLink from "../gatsby-theme-blog/components/backLink"
 
 import Layout from "components/layout"
+import styles from "../gatsby-plugin-theme-ui/styles"
 import "components/letters.css"
 
 const Post = ({data}) => {
@@ -21,11 +22,7 @@ const Post = ({data}) => {
         sx={{
           mb: 4,
           lineHeight: 1.4,
-          textDecoration: `underline`,
-          textDecorationColor: theme => `${theme.colors.primary}`,
-          textDecorationStyle: `wavy`,
-          textUnderlinePosition: `under`,
-          color: `text`,
+          ...styles.title
         }}
         dangerouslySetInnerHTML={{__html: post.title}}
       />

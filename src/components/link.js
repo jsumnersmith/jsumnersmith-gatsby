@@ -2,6 +2,8 @@
 import { jsx } from 'theme-ui'
 import { Link } from "gatsby"
 
+import styles from '../gatsby-plugin-theme-ui/styles';
+
 export default ({children, to, ...props}) => {
   const internal = /^\/(?!\/)/.test(to)
   if (internal) {
@@ -9,16 +11,7 @@ export default ({children, to, ...props}) => {
       <Link
         to={to}
         {...props}
-        sx={{
-          textDecoration: `underline`,
-          textDecorationColor: theme => `${theme.colors.primary}`,
-          textDecorationStyle: `wavy`,
-          textUnderlinePosition: `under`,
-          color: `text`,
-          '&:hover': {
-            color: `primary`
-          }
-        }}
+        sx={styles.link}
       >
         {children}
       </Link>
@@ -28,16 +21,7 @@ export default ({children, to, ...props}) => {
       <a
         href={to}
         {...props}
-        sx={{
-          textDecoration: `underline`,
-          textDecorationColor: theme => `${theme.colors.primary}`,
-          textDecorationStyle: `wavy`,
-          textUnderlinePosition: `under`,
-          color: `text`,
-          '&:hover': {
-            color: `primary`
-          }
-        }}
+        sx={styles.link}
       >
         {children}
       </a>

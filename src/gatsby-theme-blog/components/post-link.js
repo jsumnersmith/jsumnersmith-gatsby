@@ -17,14 +17,6 @@ const PostLink = ({ title, slug, date, excerpt }) => (
             display: `block`,
             mb: 3,
             lineHeight: 1.4,
-            textDecoration: `underline`,
-            textDecorationColor: theme => `${theme.colors.primary}`,
-            textDecorationStyle: `wavy`,
-            textUnderlinePosition: `under`,
-            color: `text`,
-            '&:hover': {
-              color: `primary`
-            }
           }}
           to={slug}
           dangerouslySetInnerHTML={{__html: title || slug}}

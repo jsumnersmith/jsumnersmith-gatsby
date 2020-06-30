@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Heading, Text } from 'theme-ui'
 import {Link} from 'gatsby'
+import styles from '../gatsby-plugin-theme-ui/styles'
 
 export default ({to, title, description, Image}) => {
 
@@ -14,16 +15,9 @@ export default ({to, title, description, Image}) => {
           <Heading as="h2" sx={{
             fontSize: 3,
             mb: 3,
-            textDecoration: `underline`,
-            textDecorationColor: theme => `${theme.colors.primary}`,
-            textDecorationStyle: `wavy`,
-            textUnderlinePosition: `under`,
-            color: `text`,
-            '&:hover': {
-              color: `primary`
-            }
+            ...styles.link
           }}>{title}</Heading>
-          <Text>{description}</Text>
+          <Text sx={{color: `text`}}>{description}</Text>
         </Box>
       </Flex>
     </Link>

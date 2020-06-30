@@ -1,7 +1,8 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, Heading } from 'theme-ui'
-import {Link} from 'gatsby'
+import { jsx, Box, Flex, Heading } from "theme-ui"
+import {Link} from "gatsby"
 import { ChevronLeft } from "react-feather"
+import styles from "../../gatsby-plugin-theme-ui/styles"
 
 export default ({ to, title }) => {
 
@@ -15,14 +16,7 @@ export default ({ to, title }) => {
           <Heading as="h2" sx={{
             fontSize: 2,
             mb: 3,
-            textDecoration: `underline`,
-            textDecorationColor: theme => `${theme.colors.primary}`,
-            textDecorationStyle: `wavy`,
-            textUnderlinePosition: `under`,
-            color: `text`,
-            '&:hover': {
-              color: `primary`
-            }
+            ...styles.link
           }}>{title}</Heading>
         </Box>
       </Flex>

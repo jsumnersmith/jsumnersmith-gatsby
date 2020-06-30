@@ -1,3 +1,5 @@
+import styles from './styles';
+
 const blue = `mediumblue`
 const gray = `#222`
 const grayLight = `#ccc`
@@ -84,16 +86,7 @@ export default {
     li: {
       mb: 2
     },
-    a: {
-      textDecoration: `underline`,
-      textDecorationColor: theme => `${theme.colors.primary}`,
-      textDecorationStyle: `wavy`,
-      textUnderlinePosition: `under`,
-      color: `text`,
-      '&:hover': {
-        color: `primary`
-      }
-    },
+    a: styles.link,
     em: {
       fontStyle: `italic`
     },
