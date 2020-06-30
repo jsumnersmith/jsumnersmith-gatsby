@@ -6,6 +6,7 @@ import PropTypes from "prop-types"
 import BackLink from "../gatsby-theme-blog/components/backLink"
 
 import Layout from "components/layout"
+import "components/letters.css"
 
 const Post = ({data}) => {
   const post = data.wordpressPost

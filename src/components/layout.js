@@ -1,7 +1,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { css, Styled } from "theme-ui"
+import { css, Styled, useColorMode } from "theme-ui"
 import { useStaticQuery, graphql } from "gatsby"
 import { Cell } from "styled-css-grid"
 
@@ -10,6 +10,7 @@ import Footer from "./footer"
 import "./reset.css"
 
 const Layout = ({ children }) => {
+  const [colorMode] = useColorMode();
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -37,7 +38,7 @@ const Layout = ({ children }) => {
           display: flex;
           flex-direction: column;
         }
-      `}>
+      `} className={colorMode === 'default' ? 'light-mode' : 'dark-mode'}>
         <Cell height={2} middle>
           <Header siteTitle={title}/>
         </Cell>

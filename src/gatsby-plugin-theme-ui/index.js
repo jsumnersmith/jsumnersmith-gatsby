@@ -96,6 +96,9 @@ export default {
     },
     em: {
       fontStyle: `italic`
+    },
+    blockquote: {
+      borderColor: `muted`
     }
   }
 }
