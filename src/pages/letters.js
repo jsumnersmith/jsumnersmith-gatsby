@@ -49,7 +49,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allMdx (filter: {frontmatter: {slug: {ne: null}}}) {
+    allMdx (filter: {frontmatter: {slug: {ne: null}}} sort: {fields: frontmatter___date, order: DESC}) {
       edges {
         node {
           frontmatter {
