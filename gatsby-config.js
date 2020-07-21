@@ -17,7 +17,7 @@ module.exports = {
       options: {
         url: `https://medium.com/feed/@jsumnersmith`,
         name: `MediumPosts`,
-      }
+      },
     },
     {
       resolve: `gatsby-source-wordpress`,
@@ -26,7 +26,7 @@ module.exports = {
         protocol: `https`,
         hostingWPCOM: true,
         useACF: false,
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -57,6 +57,6 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/mug-favicon.png`, // This path is relative to the root of the site.
       },
-    },
+    }
   ],
 }
