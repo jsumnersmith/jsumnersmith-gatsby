@@ -1,33 +1,14 @@
 /** @jsx jsx */
-import { useStaticQuery, graphql } from "gatsby"
 import { jsx, useColorMode, Box} from "theme-ui"
-import Img from "gatsby-image"
+import lightImage from '../images/light-notes.png';
+import darkImage from '../images/dark-notes.png';
 
 const Image = ({width = 100}) => {
-  const data = useStaticQuery(graphql`
-    query {
-      lightImage: file(relativePath: { eq: "light-notes.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      darkImage: file(relativePath: { eq: "dark-notes.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
+  
   const [colorMode] = useColorMode();
+  const image = colorMode === 'default' ? lightImage : darkImage;
 
-  const image = colorMode === 'default' ? data.lightImage : data.darkImage;
-
-  return <Box sx={{width}}><Img fluid={image.childImageSharp.fluid} /></Box>
+  return <Box sx={{width}}><img src={image} sx={{width: `100%`}} alt="A notes icon"/></Box>
 }
 
 export default Image
