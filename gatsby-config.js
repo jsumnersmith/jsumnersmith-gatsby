@@ -13,13 +13,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-rss-feed`,
-      options: {
-        url: `https://medium.com/feed/@jsumnersmith`,
-        name: `MediumPosts`,
-      },
-    },
-    {
       resolve: `gatsby-source-wordpress`,
       options: {
         baseUrl: `jsumner.wordpress.com/`,
@@ -67,6 +60,5 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
-    "gatsby-plugin-google-analytics",
   ],
 }
