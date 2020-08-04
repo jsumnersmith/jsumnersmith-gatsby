@@ -26,6 +26,7 @@ module.exports = {
         protocol: `https`,
         hostingWPCOM: true,
         useACF: false,
+        includedRoutes: ["**/posts"],
       },
     },
     {
@@ -57,6 +58,15 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/mug-favicon.png`, // This path is relative to the root of the site.
       },
-    }
+    },
+    "gatsby-transformer-json",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
+      },
+    },
+    "gatsby-plugin-google-analytics",
   ],
 }
