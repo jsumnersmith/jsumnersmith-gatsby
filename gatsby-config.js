@@ -5,7 +5,12 @@ module.exports = {
     author: `@jsumnersmith`,
   },
   plugins: [
-    `gatsby-alias-imports`,
+    {
+      resolve: "gatsby-alias-imports",
+      options: {
+        components: "src/components",
+      },
+    },
     {
       resolve: `gatsby-theme-blog`,
       options: {
@@ -39,7 +44,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    "gatsby-plugin-sharp",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -53,12 +58,5 @@ module.exports = {
       },
     },
     "gatsby-transformer-json",
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `data`,
-        path: `${__dirname}/src/data`,
-      },
-    },
   ],
 }
