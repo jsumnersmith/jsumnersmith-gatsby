@@ -11,9 +11,7 @@ export default () => {
           <Button
             aria-label="Dark Mode Toggle"
             variant="toggle"
-            onClick={e => {
-              setColorMode(colorMode === "default" ? `dark` : `default`)
-            }}
+            onClick={e => setColorMode(colorMode === `default` ? `dark` : `default`)}
             sx={{display: `flex`, background: `none`, color: colorMode === 'default' ? `text` : `white`}}  
           >
             {colorMode === "default" ? <ToggleLeft /> : <ToggleRight />}
