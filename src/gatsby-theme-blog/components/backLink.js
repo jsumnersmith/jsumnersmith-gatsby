@@ -17,7 +17,7 @@ export default ({ to, title }) => {
             fontSize: 2,
             mb: 3,
             ...styles.link
-          }}>{title}</Heading>
+          }}>{title} </Heading>
         </Box>
       </Flex>
     </Link>
