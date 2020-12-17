@@ -5,15 +5,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage, createRedirect } = actions
 
   const result = await graphql(`
-    {
-      allWordpressPost {
-        edges {
-          node {
-            id
-            slug
-            status
-            template
-            format
+   
           }
         }
       }
