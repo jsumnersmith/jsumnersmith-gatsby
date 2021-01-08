@@ -1,7 +1,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { css, useColorMode } from "theme-ui"
+import { Box, css, useColorMode } from "theme-ui"
 import { useStaticQuery, graphql } from "gatsby"
 import { Cell } from "styled-css-grid"
 
@@ -11,7 +11,6 @@ import "./reset.css"
 
 const Layout = ({ children }) => {
 
-  const [colorMode] = useColorMode();
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,7 +24,10 @@ const Layout = ({ children }) => {
   const {title} = data.site.siteMetadata;
 
   return (
-    <div css={css`
+    <Box 
+      color="text"
+      bg="background"
+      css={css`
       display: grid;
       display: grid;
       grid-template-columns: 300px 1fr;
@@ -44,7 +46,7 @@ const Layout = ({ children }) => {
       </Cell>
       <Cell  height={4} style={{padding: 25, paddingTop: 0}}><main style={{maxWidth: 600}}>{children}</main></Cell>
       <Cell top={3} height={1}><Footer /></Cell>
-    </div>
+    </Box>
   )
 }
 

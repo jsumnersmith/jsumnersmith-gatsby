@@ -2,10 +2,18 @@ const path = require(`path`)
 const { slash } = require(`gatsby-core-utils`)
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage, createRedirect } = actions
+  const { createPage } = actions
 
   const result = await graphql(`
-   
+    {
+      allWordpressPost {
+        edges {
+          node {
+            id
+            slug
+            status
+            template
+            format
           }
         }
       }

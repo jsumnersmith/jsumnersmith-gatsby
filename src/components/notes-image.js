@@ -5,7 +5,7 @@ import darkImage from '../images/dark-notes.png';
 
 const Image = ({width = 100}) => {
   
-  const [colorMode] = useColorMode();
+  const [colorMode] = useColorMode('default');
   const image = colorMode === 'default' ? lightImage : darkImage;
 
   return <Box sx={{width}}><img src={image} sx={{width: `100%`}} alt="A notes icon"/></Box>
