@@ -3059,11 +3059,6 @@ babel-extract-comments@^1.0.0:
   dependencies:
     babylon "^6.18.0"
 
-babel-jsx-utils@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/babel-jsx-utils/-/babel-jsx-utils-1.0.1.tgz#f2d171cba526594e7d69e9893d634502cf950f07"
-  integrity sha512-Qph/atlQiSvfmkoIZ9VA+t8dA0ex2TwL37rkhLT9YLJdhaTMZ2HSM2QGzbqjLWanKA+I3wRQJjjhtuIEgesuLw==
-
 babel-loader@^8.1.0:
   version "8.2.2"
   resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-8.2.2.tgz#9363ce84c10c9a40e6c753748e1441b60c8a0b81"
@@ -7021,21 +7016,6 @@ gatsby-plugin-google-analytics@^2.3.13:
     "@babel/runtime" "^7.11.2"
     minimatch "3.0.4"
 
-gatsby-plugin-image@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-0.5.0.tgz#0fb2e299f9213ee89774bf9f86dd21bba9e58192"
-  integrity sha512-tyGDzJpnRDU/uM9+W78gAQmKWFwxe+0l79rG7m60SAA0eQeWoklD5roKyWcp4WP/h/zDL2wVVPHu59/FT3CWnQ==
-  dependencies:
-    "@babel/parser" "^7.12.5"
-    "@babel/traverse" "^7.12.5"
-    babel-jsx-utils "^1.0.1"
-    babel-plugin-remove-graphql-queries "^2.14.0"
-    camelcase "^5.3.1"
-    chokidar "^3.4.3"
-    fs-extra "^8.1.0"
-    gatsby-core-utils "^1.8.0"
-    prop-types "^15.7.2"
-
 gatsby-plugin-manifest@^2.4.11:
   version "2.4.30"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.4.30.tgz#a5edca7bdf898a6f06e33969ab4e21f7438438aa"
@@ -7165,10 +7145,10 @@ gatsby-plugin-theme-ui@0.4.0-alpha.3:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.4.0-alpha.3.tgz#0d1ad42e6cefc35610a8a74c54f73b25853e818b"
   integrity sha512-jaEN95M7z5f6pV4/4eaPxNx48GNpAYzNcnFtZ03Hou4RtXyzmM9A87zisXbQFayAWTF+C7efZ4Bp3Pv2+NAvbA==
 
-gatsby-plugin-theme-ui@^0.6.0:
-  version "0.6.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.6.0-alpha.4.tgz#a572881b9d275bac341673458391ade831af03c3"
-  integrity sha512-HxbSdp2DSHiaWWSFjQ26Pw4P3g29BoWux0wmr0TPy/D7xHZ7ppK++VpmeSeLjD7evI1b4vhnbt9X9Z4+VtWQAQ==
+gatsby-plugin-theme-ui@^0.3.0:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.3.5.tgz#3fc86e5e1ede4e628ebf100f724f6e9000cd5148"
+  integrity sha512-IPiBtxY8b63XxxKjUQFg4GWvP1r7AvJ3ub7sc3nP0bSOAyGhMV3ijI7gpSF8phtHcB8oLe5Hf6+olpT22ft7Fg==
 
 gatsby-plugin-twitter@^2.3.10:
   version "2.3.11"
