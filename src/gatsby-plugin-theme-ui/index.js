@@ -8,7 +8,6 @@ const white = `#fff`
 const yellow = `#FABC60`
 
 export default {
-  useColorSchemeMediaQuery: true,
   colors: {
     text: gray,
     background: white,

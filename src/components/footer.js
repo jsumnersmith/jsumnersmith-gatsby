@@ -6,7 +6,7 @@ export default () => {
   const [colorMode, setColorMode] = useColorMode('default');
   return (
     <footer sx={{fontFamily: `body`, fontSize: 14, fontWeight: 700}}>
-        <Flex sx={{justifyContent: `center`, alignItems: `center`}}>
+        <Flex sx={{display: 'none', justifyContent: `center`, alignItems: `center`}}>
           <Sun />
           <Button
             aria-label="Dark Mode Toggle"
