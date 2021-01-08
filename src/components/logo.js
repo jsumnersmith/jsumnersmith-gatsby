@@ -9,7 +9,7 @@ const Image = () => {
 
   return (
     <Box sx={{width: 100, margin: `0 auto`, mb: 3}}>
-      <img src={image} alt="fancy mug logo" sx={{width: `100%`}}/>
+      <img src={lightLogo} alt="fancy mug logo" sx={{width: `100%`}}/>
     </Box>)
 }
 

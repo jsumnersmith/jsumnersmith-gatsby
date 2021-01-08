@@ -17,6 +17,7 @@ module.exports = {
         basePath: `/notes`,
       },
     },
+    `gatsby-plugin-theme-ui`,
     {
       resolve: `gatsby-source-wordpress`,
       options: {
