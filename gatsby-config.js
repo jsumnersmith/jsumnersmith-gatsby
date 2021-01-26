@@ -61,7 +61,9 @@ module.exports = {
     "gatsby-transformer-json",
     {
       resolve: `gatsby-plugin-functions`,
-      options: {}
+      options: {
+        path: `${__dirname}/src/api`,
+      },
     },
   ],
 }
