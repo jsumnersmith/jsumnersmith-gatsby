@@ -1,3 +1,3 @@
-export default (req, res) => {
+module.exports = (req, res) => {
   res.json({message: "Hello"})
 }
