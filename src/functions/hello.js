@@ -1,3 +1,5 @@
 module.exports = (req, res) => {
-  res.json({message: "Hello"})
+  res.status(200).send({
+    date: Date.now(),
+  })
 }
