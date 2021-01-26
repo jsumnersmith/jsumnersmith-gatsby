@@ -58,12 +58,12 @@ module.exports = {
         icon: `src/images/mug-favicon.png`, // This path is relative to the root of the site.
       },
     },
-    "gatsby-transformer-json",
     {
       resolve: `gatsby-plugin-functions`,
       options: {
         path: `${__dirname}/src/api`,
       },
     },
+    "gatsby-transformer-json",
   ],
 }
