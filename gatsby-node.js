@@ -2,7 +2,7 @@ const path = require(`path`)
 const { slash } = require(`gatsby-core-utils`)
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
 
   const result = await graphql(`
     {
@@ -62,4 +62,8 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
-}
+
+  createRedirect({
+    fromPath: `/literature`,
+    toPath: `/letters`,
+  })}
