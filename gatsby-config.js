@@ -59,5 +59,6 @@ module.exports = {
       },
     },
     "gatsby-transformer-json",
+    "gatsby-plugin-gatsby-cloud"
   ],
 }
