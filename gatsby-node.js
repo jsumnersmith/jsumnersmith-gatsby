@@ -65,7 +65,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   createRedirect({
     fromPath: `/literature/*`,
-    toPath: `/letters/:splat`,
+    toPath: `/letters`,
     isPermanent: true,
     force: true
   })}
