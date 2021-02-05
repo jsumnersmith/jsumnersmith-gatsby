@@ -1,7 +1,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { Box, css, useColorMode } from "theme-ui"
+import { Box, css } from "theme-ui"
 import { useStaticQuery, graphql } from "gatsby"
 import { Cell } from "styled-css-grid"
 

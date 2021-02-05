@@ -22,7 +22,7 @@ const Post = ({data}) => {
         title={"Letters"}
         to={"/letters"} 
       />
-      <Styled.h2
+      <Styled.h2 
         sx={{
           mb: 4,
           lineHeight: 1.4,
