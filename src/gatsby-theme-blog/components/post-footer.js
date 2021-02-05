@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import { css, Styled, Flex } from "theme-ui"
 
+const Hr = Styled.hr;
+
 const PostFooter = ({ previous, next }) => (
   <footer
     css={css({
@@ -9,7 +11,7 @@ const PostFooter = ({ previous, next }) => (
       pt: 3,
     })}
   >
-    <Styled.hr />
+    <Hr />
     {(previous || next) && (
       <Flex
         as="ul"

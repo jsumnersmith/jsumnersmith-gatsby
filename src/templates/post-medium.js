@@ -15,6 +15,7 @@ const Post = ({data}) => {
 
   const post = data.mdx;
 
+  const H2 = Styled.h2;
 
   return (
     <Layout>
@@ -22,7 +23,7 @@ const Post = ({data}) => {
         title={"Letters"}
         to={"/letters"} 
       />
-      <Styled.h2 
+      <H2 
         sx={{
           mb: 4,
           lineHeight: 1.4,
