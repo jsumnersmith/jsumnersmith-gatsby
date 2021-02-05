@@ -3,10 +3,12 @@ import { Styled, jsx } from "theme-ui"
 import { Link } from "gatsby"
 import PostDate from "./post-date";
 
+const H2 = Styled.h2;
+
 const PostLink = ({ title, slug, date, excerpt }) => (
   <article sx={{mb: 4}}>
     <header>
-      <Styled.h2
+      <H2
         sx={{
           mb: 1,
         }}
@@ -21,7 +23,7 @@ const PostLink = ({ title, slug, date, excerpt }) => (
           to={slug}
           dangerouslySetInnerHTML={{__html: title || slug}}
         />
-      </Styled.h2>
+      </H2>
       <PostDate>{date}</PostDate>
     </header>
     <section>
