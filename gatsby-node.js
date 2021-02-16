@@ -68,4 +68,12 @@ exports.createPages = async ({ graphql, actions }) => {
     toPath: `/letters`,
     isPermanent: true,
     force: true
-  })}
+  })
+
+  createRedirect({
+    fromPath: `/thoughts/*`,
+    toPath: `/notes/*`,
+    isPermanent: true,
+    force: true
+  })
+}
