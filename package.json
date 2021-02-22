@@ -9,7 +9,7 @@
     "dotenv": "^8.2.0",
     "gatsby": "^2.32.0-next.1",
     "gatsby-alias-imports": "^1.0.4",
-    "gatsby-plugin-functions": "0.1.0-2",
+    "gatsby-plugin-functions": "^0.1.0-4",
     "gatsby-plugin-google-analytics": "^2.3.13",
     "gatsby-plugin-manifest": "^2.4.11",
     "gatsby-plugin-mdx": "^1.2.18",
