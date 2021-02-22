@@ -8,7 +8,7 @@ const msg = {
   html: '<strong>Gatsby go brrrrrrrrr</strong>',
 }
 
-// module.exports = (req, res) => {
+module.exports = (req, res) => {
   return sendgrid
   .send(msg)
   .then(() => {}, error => {
@@ -26,4 +26,4 @@ const msg = {
   // res.status(200).json({
   //   message: "I will send email"
   // })
-// }
+}
