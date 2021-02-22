@@ -7,7 +7,7 @@
   "dependencies": {
     "@sendgrid/mail": "^7.4.2",
     "dotenv": "^8.2.0",
-    "gatsby": "^2.32.0-next.1",
+    "gatsby": "^2.32.4",
     "gatsby-alias-imports": "^1.0.4",
     "gatsby-plugin-functions": "^0.1.0-4",
     "gatsby-plugin-google-analytics": "^2.3.13",
