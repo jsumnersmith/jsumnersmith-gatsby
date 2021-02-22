@@ -5,10 +5,7 @@ const client = require('twilio')(process.env.GATSBY_TWILIO_ACCOUNT_SID,  process
 
 module.exports = (req, res) => {
   const body = req.body;
-  console.log(body);
   
-  let message = 'I am a Gatsby Function.'
-
   if (body && body.message) {
     return client.messages
     .create({
@@ -24,11 +21,11 @@ module.exports = (req, res) => {
 
   return client.messages
     .create({
-      body: message,
+      body: "I'm a gatsby function",
       from: '+14157022985',
       to: '+15183387907'
     }).then(message => 
-      res.setStatus(200).json({
+      res.sendStatus(200).json({
         status: 'success',
         id:message.sid
       }));
