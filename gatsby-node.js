@@ -65,13 +65,13 @@ exports.createPages = async ({ graphql, actions }) => {
 
   createRedirect({
     fromPath: `/literature/*`,
-    toPath: `/letters`,
+    toPath: `/letters/*`,
     isPermanent: true,
-    force: true
+    force: true,
+    ignoreCase: true,
   })
 
   createRedirect({
-
     fromPath: `/google`,
     toPath: `https://google.com`,
     isPermanent: true,
