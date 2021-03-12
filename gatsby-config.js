@@ -55,7 +55,6 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `mediumblue`,
         display: `minimal-ui`,
-        icon: `src/images/mug-favicon.png`, // This path is relative to the root of the site.
       },
     },
     {
