@@ -3,6 +3,11 @@ module.exports = {
     title: `Joel Sumner Smith`,
     description: `Product Manager for Gatsby focused on developer experience. Analogical thinker in an analytical world.`,
     author: `@jsumnersmith`,
+    siteUrl: `https://jsumnersmith.com`,
+    social: {
+      name: `Twitter`,
+      url: `https://twitter.com/jsumnersmith`
+    }
   },
   plugins: [
     {
@@ -60,7 +65,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-functions`,
       options: {
-        path: `${__dirname}/src/functions`,
+        path: `${__dirname}/src/api`,
       },
     },
     "gatsby-transformer-json",

@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 import Book from "components/book-image"
 import PostLink from "../gatsby-theme-blog/components/post-link"
 
-export default ({data}) => {
+const Letters = ({data}) => {
   console.log(data);
   return (
     <Layout>
@@ -37,6 +37,8 @@ export default ({data}) => {
     </Layout>
   )
 }
+
+export default Letters;
 
 export const pageQuery = graphql`
   query {

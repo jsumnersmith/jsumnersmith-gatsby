@@ -7022,10 +7022,10 @@ gatsby-plugin-feed@^2.5.11:
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
-gatsby-plugin-functions@^0.1.0-5:
-  version "0.1.0-5"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-functions/-/gatsby-plugin-functions-0.1.0-5.tgz#dedcf280feeedfa660ff4e8dfb0cfca5d6125ad1"
-  integrity sha512-prmjumtjqee1z2mmdYbWMRf9g9+FhME4w0qydEVRlHhmcSaC7NevkOfbTFkhKWdPKN003v1xKA58220VFHAD/A==
+gatsby-plugin-functions@0.1.0-6:
+  version "0.1.0-6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-functions/-/gatsby-plugin-functions-0.1.0-6.tgz#4f6eaec536ef508bdde47a76868f940774073260"
+  integrity sha512-C+r4UdLLQx4nrHvs6JfTRRuP/xciBJ6qVan+WEfo3y00KeREOScmtebM18m43i9rfBDSdtUPCZ5Q04LwuQbsdg==
   dependencies:
     "@babel/core" "^7.12.8"
     "@babel/preset-env" "^7.12.7"

@@ -10,7 +10,7 @@
     "gatsby": "^3.0.3",
     "gatsby-alias-imports": "^1.0.4",
     "gatsby-plugin-emotion": "^6.0.0",
-    "gatsby-plugin-functions": "^0.1.0-5",
+    "gatsby-plugin-functions": "0.1.0-6",
     "gatsby-plugin-google-analytics": "^2.3.13",
     "gatsby-plugin-manifest": "^2.4.11",
     "gatsby-plugin-mdx": "^1.2.18",
