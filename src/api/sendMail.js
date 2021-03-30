@@ -13,7 +13,7 @@ module.exports = (req, res) => {
     res.json({message: "Try a POST!"})
   }
   if (req.method == "POST"){
-    console.log("BODY", req.body);
+    console.log("BODY", req.body); //returns undefined.
     let message = msg;
     if (req.body && req.body.msg) {
       message = req.body.msg;
@@ -23,21 +23,15 @@ module.exports = (req, res) => {
       .then(() => {
         const used = process.memoryUsage().heapUsed / 1024 / 1024;
         console.log(`The script uses approximately ${Math.round(used * 100) / 100} MB`);
-
         res.status(200).json({
         message: "I will send email"
       })}, error => {
         console.error(error);
-
         if (error.response) {
           return res.status(500).json({
             error: error.response
           })
         }
-        
       });
   }
-  
-  
-  
 }
