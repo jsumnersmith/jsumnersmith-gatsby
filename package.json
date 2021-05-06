@@ -32,7 +32,7 @@
     "react-helmet": "^6.1.0",
     "rehype-parse": "^7.0.1",
     "remark-stringify": "^8.1.0",
-    "sanitize-html": "^1.27.0",
+    "sanitize-html": "^2.3.2",
     "styled-components": "^5.1.1",
     "styled-css-grid": "^1.2.1",
     "theme-ui": "^0.3.1",
