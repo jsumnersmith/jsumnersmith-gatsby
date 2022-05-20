@@ -1,25 +1,23 @@
-/** @jsx jsx */
-import { jsx, Box, Flex, Heading, Text } from "theme-ui"
+import React from 'react';
 import {Link} from "gatsby"
 import styles from "../gatsby-plugin-theme-ui/styles"
 
 export default ({to, title, description, Image}) => {
 
   return (
-    <Link to={to} sx={{display: `block`, mb: 3, color: `text`, textDecoration: `none`, border: theme => `1px solid  ${theme.colors.muted}`, borderRadius: 3}}>  
-      <Flex>
-        <Flex sx={{minWidth: 170, padding: 37, justifyContent: `center`, alignItems: `center`}}>
+    <Link to={to} style={{display: `block`, marginBottom: 30, textDecoration: `none`, border: `1px solid  #ccc`, borderRadius: 3}}>  
+      <div style={{ display: 'flex' }}>
+        <div style={{display: 'flex', minWidth: 170, padding: 37, justifyContent: `center`, alignItems: `center`}}>
           <Image />
-        </Flex>
-        <Box sx={{p: 4, pl: 0}}>
-          <Heading as="h2" sx={{
-            fontSize: 3,
-            mb: 3,
-            ...styles.link
-          }}>{title}</Heading>
-          <Text sx={{color: `text`}}>{description}</Text>
-        </Box>
-      </Flex>
+        </div>
+        <div sx={{p: 4, pl: 0}}>
+          <h2 style={{
+            fontSize: 18,
+            margin: 15,
+          }}>{title}</h2>
+          <p>{description}</p>
+        </div>
+      </div>
     </Link>
   )
 }

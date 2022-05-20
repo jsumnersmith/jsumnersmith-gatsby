@@ -1,8 +1,7 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import React from 'react';
 import { Link } from "gatsby"
 
-import styles from "../gatsby-plugin-theme-ui/styles"
+// import styles from "../gatsby-plugin-theme-ui/styles"
 
 export default ({children, to, ...props}) => {
   const internal = /^\/(?!\/)/.test(to)
@@ -11,7 +10,6 @@ export default ({children, to, ...props}) => {
       <Link
         to={to}
         {...props}
-        sx={styles.link}
       >
         {children}
       </Link>
@@ -21,7 +19,6 @@ export default ({children, to, ...props}) => {
       <a
         href={to}
         {...props}
-        sx={styles.link}
       >
         {children}
       </a>

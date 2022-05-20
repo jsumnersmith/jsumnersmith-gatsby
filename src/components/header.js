@@ -7,18 +7,18 @@ import PropTypes from "prop-types"
 
 
 const Header = ({ siteTitle }) => (
-  <header sx={{mb: 4, p: 2, maxWidth: `90%`, ml: `auto`, mr: `auto`}}>
+  <header>
     
-    <Logo sx={{width: 200, marginLeft: `auto`, marginRight: `auto`}}/>
-    <Heading as="h1" sx={{fontSize: 2, mb: 4, textAlign: `center`}}>
+    <Logo style={{width: 200, marginLeft: `auto`, marginRight: `auto`}}/>
+    <h1 style={{fontSize: 16, marginBottom: 20, textAlign: `center`}}>
       <Link
         to="/"
       >
         {siteTitle}
       </Link>
-    </Heading>
-    <Text sx={{mb: 2}}>Product Manager <Link to="https://gatsbyjs.com" target="blank">@Gatsby</Link> focused on cloud native platform.</Text>
-    <Text>Analogical thinker in an analytical world.</Text>
+    </h1>
+    <p sx={{mb: 2}}>Director of Product <Link to="https://gatsbyjs.com" target="blank">@Gatsby</Link></p>
+    <p>Analogical thinker in an analytical world.</p>
   </header>
 )
 

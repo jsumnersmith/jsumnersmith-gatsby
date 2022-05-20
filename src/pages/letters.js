@@ -1,13 +1,12 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import sanitize from "sanitize-html"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import PageTitle from "../components/pageTitle"
 import SEO from "../components/seo"
-import Book from "components/book-image"
-import PostLink from "../gatsby-theme-blog/components/post-link"
+import Book from "../components/book-image"
+import PostLink from "../components/post-link"
 
 export default ({data}) => {
   console.log(data);
@@ -25,14 +24,14 @@ export default ({data}) => {
           {...node.frontmatter} 
         />
         ))}
-      {data.allWordpressPost.edges.map(({ node }) => (
+      {/* {data.allWordpressPost.edges.map(({ node }) => (
           <PostLink 
             key={node.slug} 
             title={sanitize(node.title)} 
             excerpt={sanitize(node.excerpt)} 
             {...node} 
           />
-        ))}
+        ))} */}
       
     </Layout>
   )
@@ -40,15 +39,6 @@ export default ({data}) => {
 
 export const pageQuery = graphql`
   query {
-    allWordpressPost {
-      edges {
-        node {
-          title
-          excerpt
-          slug
-        }
-      }
-    }
     allMdx (filter: {frontmatter: {slug: {ne: null}}} sort: {fields: frontmatter___date, order: DESC}) {
       edges {
         node {

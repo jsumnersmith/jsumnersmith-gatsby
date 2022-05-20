@@ -1,33 +1,29 @@
-/** @jsx jsx */
-import { Styled, jsx } from "theme-ui"
+import React from 'react'
 import { Link } from "gatsby"
-import PostDate from "./post-date";
-
-const H2 = Styled.h2;
+// import PostDate from "../gatsby-theme-blog/components/post-date";
 
 const PostLink = ({ title, slug, date, excerpt }) => (
-  <article sx={{mb: 4}}>
+  <article style={{mb: 4}}>
     <header>
-      <H2
-        sx={{
-          mb: 1,
+      <h2
+        style={{
+          marginBottom: 10,
         }}
       >
-        <Styled.a
-          as={Link}
-          sx={{
+        <Link
+          style={{
             display: `block`,
-            mb: 3,
+            marginBottom: 15,
             lineHeight: 1.4,
           }}
           to={slug}
           dangerouslySetInnerHTML={{__html: title || slug}}
         />
-      </H2>
-      <PostDate>{date}</PostDate>
+      </h2>
+      {/* <PostDate>{date}</PostDate> */}
     </header>
     <section>
-      <Styled.p dangerouslySetInnerHTML={{__html: excerpt}} />
+      <p dangerouslySetInnerHTML={{__html: excerpt}} />
     </section>
   </article>
 )

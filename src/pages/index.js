@@ -3,8 +3,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LargeLink from "../components/largelink"
-import Book from "components/book-image"
-import Notes from "components/notes-image"
+import Book from "../components/book-image"
+import Notes from "../components/notes-image"
 
 const IndexPage = () => (
   <Layout>
