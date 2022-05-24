@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
         {siteTitle}
       </Link>
     </Heading>
-    <Text sx={{mb: 2}}>Product Manager <Link to="https://gatsbyjs.com" target="blank">@Gatsby</Link> focused on cloud native platform.</Text>
+    <Text sx={{mb: 2}}>Director of Product <Link to="https://firehydrant.com" target="blank">@FireHydrant</Link>.</Text>
     <Text>Analogical thinker in an analytical world.</Text>
   </header>
 )
